@@ -1,0 +1,22 @@
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    background-color: #d7900a;
+    padding: 20px;
+}
+li{
+    list-style: none;
+}
+.menu-list{
+    display: flex;
+}
+.menu-link{
+    margin-left: 15px;
+}
