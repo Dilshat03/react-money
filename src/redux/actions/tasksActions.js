@@ -4,6 +4,11 @@ export const tasksActions = (data) =>{
 }
 
 
-export const removeFromCart = (el) => {
-    return {type:'REMOVE_FROM_CART' , payload: el.id}
+export const removeFromCart = (idx) => {
+    return {type:'REMOVE_FROM_CART' , payload: idx}
+}
+
+
+export const resetAll = () =>{
+    return {type:"RESET_ALL"}
 }

@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 import ExpensesListItem from "../ExspensesListItem";
 
 const ExpensesList = () => {
-    const {tasks} = useSelector(s=>s.task)
+    const {tasks} = useSelector(s => s.task)
     return (
         <div>
             <div className="container mx-auto  max-w-4xl mt-10">
@@ -24,6 +24,10 @@ const ExpensesList = () => {
                                     <th scope="col"
                                         className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-center text-sm uppercase font-normal">
                                         Сколько потратили
+
+                                        <button>
+                                            <i className='bx bx-sort'></i>
+                                        </button>
                                     </th>
                                     <th scope="col"
                                         className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-center text-sm uppercase font-normal">
@@ -33,8 +37,8 @@ const ExpensesList = () => {
                                 </thead>
                                 <tbody>
                                 {
-                                    tasks.map(el=>
-                                    <ExpensesListItem el={el}/>
+                                    tasks.map((el, idx) =>
+                                        <ExpensesListItem el={el} idx={idx}/>
                                     )
                                 }
                                 </tbody>

@@ -24,3 +24,29 @@
     margin-left: auto;
     display: block;
 }
+
+.form-width{
+    width: 500px;
+}
+.input-name{
+    border-bottom: 1px solid #088d24;
+    width: 100%;
+}
+.btn-more{
+    display: block;
+    margin-left: auto;
+    margin-top: 40px;
+    border: 1px solid #87a7a9;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: burlywood;
+    color: #333a3a;
+}
+.btn-more:hover{
+    background-color: #23751f;
+    color: wheat;
+}
+.label-name{
+    font-size: 13px;
+    color: #51c29f;
+}

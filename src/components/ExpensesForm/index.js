@@ -22,8 +22,9 @@ const ExpensesForm = () => {
                 .required('Required'),
             amount: Yup.number().required('Required'),
         }),
-        onSubmit: values => {
+        onSubmit: (values,{ resetForm }) => {
             dispatch(tasksActions(values))
+            resetForm();
         },
     });
     return (
@@ -39,7 +40,6 @@ const ExpensesForm = () => {
                                        name='date'
                                        onChange={formik.handleChange}
                                        value={formik.values.date}
-
                                 />
                             </div>
                         </div>
