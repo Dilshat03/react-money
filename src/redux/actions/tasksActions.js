@@ -12,3 +12,9 @@ export const removeFromCart = (idx) => {
 export const resetAll = () =>{
     return {type:"RESET_ALL"}
 }
+
+
+export const sortTasks = ()=>{
+    return   {type:'SORT_TASKS'}
+
+}

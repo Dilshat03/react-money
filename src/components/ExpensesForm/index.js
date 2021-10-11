@@ -20,7 +20,7 @@ const ExpensesForm = () => {
             title: Yup.string()
                 .max(8, 'Максимум 8 символов')
                 .required('Required'),
-            amount: Yup.number().required('Required'),
+            amount: Yup.string().required('Required'),
         }),
         onSubmit: (values,{ resetForm }) => {
             dispatch(tasksActions(values))
